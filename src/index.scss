@@ -1,0 +1,17 @@
+/* CSS Reset */
+@import url('./assets/reset/reset.scss');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  width: 746px;
+  height: 529px;
+  display: flex;
+}

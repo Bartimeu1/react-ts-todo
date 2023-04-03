@@ -1,0 +1,19 @@
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-button {
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 0;
+  }
+  &-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding-bottom: 4px;
+  }
+}

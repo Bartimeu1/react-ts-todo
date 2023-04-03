@@ -1,0 +1,94 @@
+.menu {
+  height: 100%;
+  width: 200px;
+  background: #f4f6f8;
+  padding: 57px 20px 0 20px;
+  position: relative;
+  &-all {
+    padding-left: 10px;
+    margin-bottom: 38px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &-icon {
+      margin-right: 6px;
+    }
+    &-text {
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      color: #767676;
+    }
+  }
+  &-add {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 12px;
+    &-icon {
+      margin-right: 10px;
+    }
+    &-text {
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.15px;
+      color: #767676;
+    }
+  }
+  &-modal {
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 18px 17px 15px 18px;
+    &.active {
+      display: block;
+    }
+    &-palette {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 -2.5px 13px -2.5px;
+    }
+    &-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 2.5px;
+      cursor: pointer;
+      &.current {
+        border: 2px solid #525252;
+      }
+    }
+    &-input {
+      border: 1px solid #efefef;
+      border-radius: 4px;
+      width: 200px;
+      padding: 8px 0 8px 11px;
+      margin: 0 0 13px 0;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+    &-button {
+      letter-spacing: 0.15px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      background: #4dd599;
+      border-radius: 4px;
+      width: 100%;
+      padding: 12px 0 11px 0;
+    }
+    &-close {
+      cursor: pointer;
+      position: absolute;
+      right: -13px;
+      top: -2px;
+    }
+  }
+}
