@@ -10,7 +10,6 @@ import Icon from '../Icon/Icon';
 import { colors } from '../../data';
 
 import addIcon from '../../assets/images/addItemIcon.svg';
-import allIcon from '../../assets/images/showAllIcon.svg';
 import closeIcon from '../../assets/images/closeModal.svg';
 
 const Menu: React.FC = () => {
@@ -64,7 +63,7 @@ const Menu: React.FC = () => {
             />
           ))}
         </div>
-        <button className="menu-modal-button" onClick={() => onAddFolder()}>
+        <button className="menu-modal-button" onClick={onAddFolder}>
           Добавить
         </button>
       </div>

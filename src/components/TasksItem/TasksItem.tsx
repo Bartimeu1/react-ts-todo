@@ -1,20 +1,19 @@
 import React, { FC } from 'react';
 import './TaskItem.scss';
-import { ITask } from '../../types/data';
 
 import completedIcon from '../../assets/images/trueIcon.svg';
 import unfulfilledIcon from '../../assets/images/unfulfilledIcon.svg';
 
 import Icon from '../Icon/Icon';
 
-interface ITaskItem {
+type TaskItemProps = {
   id: number;
   text: string;
   completed: boolean;
   changeStatus: (id: number) => void;
 }
 
-const TasksItem: FC<ITaskItem> = ({ id, text, completed, changeStatus }) => {
+const TasksItem: FC<TaskItemProps> = ({ id, text, completed, changeStatus }) => {
   return (
     <div className="task">
       <button type="button" className="task-button" onClick={() => changeStatus(id)}>

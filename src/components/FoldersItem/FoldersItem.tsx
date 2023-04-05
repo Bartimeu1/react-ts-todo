@@ -6,7 +6,7 @@ import deleteIcon from '../../assets/images/deleteItemIcon.svg';
 
 import Icon from '../Icon/Icon';
 
-interface IFolderItem {
+type FolderItemProps = {
   id: number;
   name: string;
   color: string;
@@ -15,7 +15,7 @@ interface IFolderItem {
   deleteFolder: (id: number) => void;
 }
 
-const FoldersItem: React.FC<IFolderItem> = ({
+const FoldersItem: React.FC<FolderItemProps> = ({
   id,
   name,
   color,

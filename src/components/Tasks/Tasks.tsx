@@ -104,7 +104,7 @@ const Tasks: FC<ITasks> = ({ empty }) => {
               ref={editInputRef}
               onChange={(e) => onEditInputChange(e)}
             />
-            <button type="button" className="tasks-folder-true" onClick={() => onEditFolderName()}>
+            <button type="button" className="tasks-folder-true" onClick={onEditFolderName}>
               <Icon src={trueIcon} alt="true" />
             </button>
           </>
@@ -139,7 +139,7 @@ const Tasks: FC<ITasks> = ({ empty }) => {
             onChange={(e) => onTaskInputChange(e)}
           />
           <div className="tasks-modal-controls">
-            <button type="button" className="tasks-modal-add" onClick={() => onAddTask()}>
+            <button type="button" className="tasks-modal-add" onClick={onAddTask}>
               Добавить задачу
             </button>
             <button

@@ -23,7 +23,7 @@ const foldersSlice = createSlice({
     },
     addFolder: (state, action) => {
       const newFolder = { ...action.payload, id: uuidv4() };
-      state.list = [...state.list, { ...newFolder }];
+      state.list.push({ ...newFolder })
       state.currentFolder = newFolder;
     },
     deleteFolder: (state, action) => {
